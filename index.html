@@ -8,7 +8,50 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <p>cool header</p>
+    </header>
+    <div class="container">
+        <form class="form" id="login">
+            <h1 class="formTitle">Login</h1>
+            <div class="message errorMessage"></div>
+            <div class="formGroup">
+                <input type="username" class="formInput" id="loginUsername" autofocus placeholder="Username.">
+            </div>
+
+            <div class="formGroup">
+                <input type="password" class="formInput" id="loginPassword" placeholder="Password.">
+            </div>
+            <button class="formButton" id="loginButton">Continue</button>
+            <p class="formText">
+                <a href="#" class="createLink" id="linkAccount">Create account.</a>
+            </p>
+        </form>
+        <form class="form formHidden" id="createAccount">
+            <h1 class="formTitle">Create account</h1>
+            <div class="message errorMessage"></div>
+            <div class="formGroup">
+                <input type="username" class="formInput" id="signupUsername" autofocus placeholder="Username.">
+                <div class="formErrorMessage"></div>
+            </div>
+            <div class="formGroup">
+                <input type="password" class="formInput" id="signupPassword" placeholder="Password.">
+                <div class="formErrorMessage"></div>
+            </div>
+            <button class="formButton">Confirm</button>
+            <p class="formText">
+                <a href="" class="createLink" id="linkLogin">Already have an account? Sign in.</a>
+            </p>
+        </form>
+        <form class="form formHidden" id="logoutForm">
+            <h1 class="formTitle">coolt du lyckades logga in</h1>
+            <p class="formText">klicka under för att logga ut</p>
+            <button class="formButton" id="logoutButton"> Logout.</button>
+        </form>
+    </div>
+    <footer>
+        <p>cool footer</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
