@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
             createAccountForm.classList.add("formHidden");
         }
     })
+    
     logoutButton.addEventListener("click", e => {
         e.preventDefault();
         logoutForm.classList.add("formHidden");
