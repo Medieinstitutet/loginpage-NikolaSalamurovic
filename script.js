@@ -7,15 +7,9 @@ let users = [
         username:'nikko', password: 'cool'
     }
 ];
-// function checkLogin(username,password){
-//     for (let i = 0; i < users.length; i++){
-//         if(users[i].username == username && users[i].password == password){
-//             localStorage.setItem("storedUser", JSON.stringify({username:username,password:password}));
-//             return true;
-//         }
-//     }
-//     document.querySelector(".errorMessage").innerHTML = "Wrong Username/Password";
-// }
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
     //to change from logged out page -> log in & create account pages
     const loginForm = document.querySelector("#login");
@@ -49,6 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
         createAccountForm.classList.add("formHidden");
         heretostay.classList.add("formHidden");
         changed.classList.remove("formHidden");
+        document.querySelector("#changed").innerHTML = "Hello" + " " + JSON.parse(localStorage.getItem("storedUser")).username + "!";
     }
     //conditions on sucessful login and failed login
     loginButton.addEventListener("click", e => {
@@ -63,6 +58,8 @@ document.addEventListener("DOMContentLoaded", () => {
             //remove old header add new
             heretostay.classList.add("formHidden");
             changed.classList.remove("formHidden");
+            //change HTML on header to username
+            document.querySelector("#changed").innerHTML = "Hello" + " " + username + "!";
         } else{
             linkGoBack.classList.remove("formHidden");
             loginForm.classList.add("formHidden");
@@ -95,5 +92,4 @@ document.addEventListener("DOMContentLoaded", () => {
         loginForm.classList.remove("formHidden");
         createAccountForm.classList.add("formHidden");
     })
-    
 });

@@ -9,7 +9,8 @@
 </head>
 <body>
     <header>
-        <p id="heretostay">HEADER I MIGHT CHANGE</p>
+        <h1 id="logo">Login-form</h1>
+        <p id="heretostay">HEADER I DONT WANT TO CHANGE BUT I MIGHT IF YOU LOG IN</p>
         <p class="formHidden" id="changed">YEAH I CHANGED</p>
     </header>
     <div class="container">
@@ -30,23 +31,21 @@
         </form>
         <form class="form formHidden" id="createAccount">
             <h1 class="formTitle">Create account</h1>
-            <div class="message errorMessage"></div>
+            <div class="message errorMessage" id="errorMessage"></div>
             <div class="formGroup">
                 <input type="username" class="formInput" id="signupUsername" autofocus placeholder="Username.">
-                <div class="formErrorMessage"></div>
             </div>
             <div class="formGroup">
                 <input type="password" class="formInput" id="signupPassword" placeholder="Password.">
-                <div class="formErrorMessage"></div>
             </div>
-            <button class="formButton">Confirm</button>
+            <button class="formButton" id="createButton">Confirm</button>
             <p class="formText">
                 <a href="" class="createLink" id="linkLogin">Already have an account? Sign in.</a>
             </p>
         </form>
         <form class="form formHidden" id="logoutForm">
-            <h1 class="formTitle">Coolt! Du lyckades logga in</h1>
-            <p class="formText">Klicka under för att logga ut</p>
+            <h1 class="formTitle">Coolt! Du är nu inloggad.</h1>
+            <p class="formText">Klicka under för att logga ut.</p>
             <button class="formButton" id="logoutButton"> Logout.</button>
         </form>
         <form class="form formHidden" id="goBack">

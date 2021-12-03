@@ -16,12 +16,28 @@ body{
     background-color: var(--color-primary);
 }
 header{
-    text-align: center;
+    display: flex;
+    flex-direction: row;
     color: chocolate;
     font: 500 1rem 'Quicksand', sans-serif;
     font-size: 1.5rem;
     width: 100%;
+    height: 60px;
     background-color: var(--color-primary-dark);
+}
+#logo{
+    position: relative;
+    font-size: 3rem;
+    margin: 0;
+    
+}
+#heretostay{
+    position: absolute;
+    right: 1rem;
+}
+#changed{
+    position: absolute;
+    right: 1rem;
 }
 footer{
     text-align: center;
