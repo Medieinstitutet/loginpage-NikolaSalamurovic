@@ -9,7 +9,8 @@
 </head>
 <body>
     <header>
-        <p>cool header</p>
+        <p id="heretostay">HEADER I MIGHT CHANGE</p>
+        <p class="formHidden" id="changed">YEAH I CHANGED</p>
     </header>
     <div class="container">
         <form class="form" id="login">
@@ -44,13 +45,18 @@
             </p>
         </form>
         <form class="form formHidden" id="logoutForm">
-            <h1 class="formTitle">coolt du lyckades logga in</h1>
-            <p class="formText">klicka under för att logga ut</p>
+            <h1 class="formTitle">Coolt! Du lyckades logga in</h1>
+            <p class="formText">Klicka under för att logga ut</p>
             <button class="formButton" id="logoutButton"> Logout.</button>
+        </form>
+        <form class="form formHidden" id="goBack">
+            <h1 class="formTitle" id="wrongLogin">Wrong Username/Password</h1>
+            <p class="formText">
+                <a href="" class="createLink" id="linkGoBack">Try again.</a>
         </form>
     </div>
     <footer>
-        <p>cool footer</p>
+        <p>FOOTER HERE TO STAY</p>
     </footer>
     <script src="script.js"></script>
 </body>

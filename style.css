@@ -15,9 +15,21 @@ body{
     font-size: 18px;
     background-color: var(--color-primary);
 }
-.header{
-    position: absolute;
-    top: 20%;
+header{
+    text-align: center;
+    color: chocolate;
+    font: 500 1rem 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+    width: 100%;
+    background-color: var(--color-primary-dark);
+}
+footer{
+    text-align: center;
+    color: chocolate;
+    font: 500 1rem 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+    width: 100%;
+    background-color: var(--color-primary-dark);
 }
 .container{
     
@@ -101,4 +113,7 @@ body{
 }
 .createLink:hover{
     text-decoration: underline;
+}
+#wrongLogin{
+    color: var(--color-error);
 }
