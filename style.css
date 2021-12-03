@@ -41,11 +41,11 @@ header{
 }
 footer{
     text-align: center;
-    color: chocolate;
+    background-color: rgb(199, 117, 172);
+    color: indigo;
     font: 500 1rem 'Quicksand', sans-serif;
     font-size: 1.5rem;
     width: 100%;
-    background-color: var(--color-primary-dark);
 }
 .container{
     
