@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
             heretostay.classList.add("formHidden");
             changed.classList.remove("formHidden");
             //change HTML on header to username
-            document.querySelector("#changed").innerHTML = "Hello" + " " + username + "!";
+            document.querySelector("#changed").innerHTML = "Hello" + " " + JSON.parse(localStorage.getItem("storedUser")).username + "!";
         } else{
             linkGoBack.classList.remove("formHidden");
             loginForm.classList.add("formHidden");
